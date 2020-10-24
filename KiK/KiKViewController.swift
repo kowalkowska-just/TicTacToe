@@ -61,6 +61,7 @@ class KiKViewController: UIViewController {
         super.viewDidLoad()
         
         setupGame()
+        addAccessibilityIdentyfiers()
     }
 
     @IBAction func didTapButton(_ sender: UIButton) {
@@ -159,3 +160,14 @@ class KiKViewController: UIViewController {
     
 }
 
+
+extension KiKViewController {
+    
+    func addAccessibilityIdentyfiers() {
+        for button in buttons {
+            button.isAccessibilityElement = true
+            button.accessibilityIdentifier = String(button.tag)
+        }
+    }
+    
+}

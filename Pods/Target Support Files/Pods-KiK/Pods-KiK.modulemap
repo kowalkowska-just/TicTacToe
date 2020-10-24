@@ -1,0 +1,6 @@
+framework module Pods_KiK {
+  umbrella header "Pods-KiK-umbrella.h"
+
+  export *
+  module * { export * }
+}

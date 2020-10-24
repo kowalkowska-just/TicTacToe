@@ -1,0 +1,6 @@
+framework module Pods_KiKTests {
+  umbrella header "Pods-KiKTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
